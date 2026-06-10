@@ -62,3 +62,4 @@ Para ejecutar este proyecto en un entorno local, asegúrate de contar con:
 2. Abre una terminal en la raíz del proyecto y ejecuta el siguiente comando para generar el *autoload* de las clases:
    ```bash
    composer dump-autoload -o
+   https://github.com/Luis682669/MiniproyectoCharla.git 
