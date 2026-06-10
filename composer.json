@@ -1,0 +1,19 @@
+{
+    "name": "luis/laboratorio-autoload",
+    "description": "Laboratorio de Carga Automática PSR-4",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Luis\\LaboratorioAutoload\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luis682669",
+            "email": "85376855+Luis682669@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
