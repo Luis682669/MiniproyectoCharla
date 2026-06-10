@@ -5,7 +5,7 @@ use Luis\LaboratorioAutoload\Utilidades\SeguridadWeb;
 $resultado = null;
 $error = null;
 $n = '';
-
+// Procesar el formulario al enviarlo
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $n = $_POST['n'] ?? '';
     if ($n === '' || !ctype_digit($n) || (int)$n < 1) {
@@ -64,6 +64,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
   </div>
   <?php endif; ?>
+
+  <?php include 'footer.php'; ?>
 </div>
 </div>
 </body>

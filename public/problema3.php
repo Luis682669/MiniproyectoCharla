@@ -51,6 +51,8 @@ $formula = (1000 * 1001) / 2;
   <div class="formula-box">
     <p>Fórmula de Gauss: <strong>n × (n + 1) / 2</strong> → <strong>1000 × 1001 / 2 = <?php echo number_format($formula,0,',','.'); ?></strong></p>
   </div>
+
+  <?php include 'footer.php'; ?>
 </div>
 </div>
 </body>

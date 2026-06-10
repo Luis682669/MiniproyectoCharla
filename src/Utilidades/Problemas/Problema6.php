@@ -6,6 +6,7 @@ namespace Luis\LaboratorioAutoload\Utilidades\Problemas;
 
 class Problema6
 {
+    // Esta función recibe un presupuesto total y devuelve un array con el presupuesto asignado a ginecología, traumatología y pediatría según los porcentajes dados
     public static function ejecutar(float $presupuestoTotal): array
     {
         return [

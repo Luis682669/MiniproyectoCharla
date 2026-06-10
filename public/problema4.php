@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/../vendor/autoload.php';
-
+require_once __DIR__ . '/../vendor/autoload.php';// Este problema no requiere inputs del usuario, por lo que simplemente ejecutamos la lógica al cargar la página
+// Este problema no requiere inputs del usuario, por lo que simplemente ejecutamos la lógica al cargar la página
 $sumaPares = 0;
 $sumaImpares = 0;
 for ($i = 1; $i <= 200; $i++) {
@@ -58,6 +58,8 @@ $pctImpares = round($sumaImpares / $total * 100, 1);
     <div class="lbl">Suma total (1→200)</div>
     <div class="val"><?php echo number_format($total,0,',','.'); ?></div>
   </div>
+
+  <?php include 'footer.php'; ?>
 </div>
 </div>
 </body>

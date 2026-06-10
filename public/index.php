@@ -3,9 +3,10 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use Luis\LaboratorioAutoload\Usuario;
 use Luis\LaboratorioAutoload\Utilidades\SeguridadWeb;
-
+// Crear un usuario de ejemplo y definir los problemas disponibles
 $usuario = new Usuario('Luis');
 $problemas = [
+    // se agrega aquí los problemas con su descripción, enlace y etiqueta
     [
         'id' => 1,
         'titulo' => 'Media y desviación',

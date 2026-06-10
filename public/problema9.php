@@ -8,13 +8,13 @@ $base = 4;
 $resultado = null;
 $error = null;
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {// Validar el número base ingresado por el usuario
     $base = $_POST['base'] ?? 4;
     if (!ctype_digit((string) $base) || (int) $base < 1 || (int) $base > 9) {
         $error = 'Ingresa un número entero entre 1 y 9.';
     } else {
         $resultado = Problema9::ejecutar((int) $base);
-    }
+    }// Si la entrada es válida, ejecutamos el problema para generar las potencias
 }
 ?>
 <!doctype html>
@@ -66,6 +66,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="val"><?php echo number_format(end($resultado)['val'],0,',','.'); ?></div>
   </div>
   <?php endif; ?>
+
+  <?php include 'footer.php'; ?>
 </div>
 </div>
 </body>

@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $resultado = Problema5::ejecutar($edades);
     }
-}
+}//
 
 $labels = [
     'nino' => ['label' => 'Niños', 'icon' => '🧒', 'tone' => '#eef1ff'],
@@ -85,6 +85,8 @@ $labels = [
     </div>
   </section>
   <?php endif; ?>
+
+  <?php include 'footer.php'; ?>
 </div>
 </div>
 </body>

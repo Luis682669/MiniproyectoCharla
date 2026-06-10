@@ -65,6 +65,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="tabla-row"><span class="lbl">Estación</span><span class="val" style="color:<?php echo $resultado['color'];?>"><?php echo SeguridadWeb::sanitizarSalida($resultado['nombre']);?></span></div>
   </div>
   <?php endif; ?>
+
+  <?php include 'footer.php'; ?>
 </div>
 </div>
 </body>

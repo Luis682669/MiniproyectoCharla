@@ -7,7 +7,7 @@ use Luis\LaboratorioAutoload\Utilidades\SeguridadWeb;
 $resultado = null;
 $error = null;
 $presupuesto = '';
-
+// porcentajes iconos y colores para cada departamento
 $pcts = ['Ginecología' => 40, 'Traumatología' => 35, 'Pediatría' => 25];
 $icons = ['Ginecología' => '🏥', 'Traumatología' => '🦴', 'Pediatría' => '👶'];
 $colors = [
@@ -15,6 +15,7 @@ $colors = [
     'Traumatología' => ['bg' => '#e8fdf8', 'border' => '#b8f0e4', 'text' => 'var(--accent-2)', 'accent' => '#2ad4b8'],
     'Pediatría' => ['bg' => '#fff8ee', 'border' => '#ffe4b0', 'text' => 'var(--accent-3)', 'accent' => '#ffb85c'],
 ];
+// Para la gráfica de pastel, calculamos los stops para el gradiente cónico basado en los porcentajes de cada departamento
 $pieStops = [];
 $start = 0;
 foreach ($pcts as $dep => $pct) {
@@ -107,6 +108,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </article>
   </div>
   <?php endif; ?>
+
+  <?php include 'footer.php'; ?>
 </div>
 </div>
 </body>

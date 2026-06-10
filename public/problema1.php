@@ -6,7 +6,7 @@ use Luis\LaboratorioAutoload\Utilidades\SeguridadWeb;
 
 $resultado = null;
 $error = null;
-
+// Procesar el formulario al enviarlo
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nums = [];
     $valido = true;
@@ -26,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $resultado = SolucionadorProblemas::resolverProblema1(...$nums);
     }
 }
+// El resultado es un array con 'media', 'desv', 'min', 'max' y 'nums' (valores originales)
 ?>
 <!doctype html>
 <html lang="es">
@@ -71,7 +72,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <a href="problema1.php" class="btn" style="background:var(--surface-2);color:var(--muted);border:1.5px solid var(--border);box-shadow:none">Limpiar</a>
     </div>
   </form>
-
   <?php if ($resultado): ?>
   <div class="results-grid">
     <div class="res-card media"><div class="res-label">μ · Media</div><div class="res-value"><?php echo $resultado['media'];?></div></div>
@@ -80,6 +80,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="res-card max"><div class="res-label">↑ Máximo</div><div class="res-value"><?php echo $resultado['max'];?></div></div>
   </div>
   <?php endif; ?>
+
+  <?php include 'footer.php'; ?>
+
 </div>
 </div>
 </body>

@@ -3,12 +3,12 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use Luis\LaboratorioAutoload\Utilidades\Problemas\Problema7;
 use Luis\LaboratorioAutoload\Utilidades\SeguridadWeb;
-
+// Este archivo es una página web que permite al usuario ingresar un conjunto de notas (separadas por coma, espacio o punto y coma) y muestra estadísticas como la media, desviación estándar, mínimo, máximo, mediana, cantidad total de notas, cantidad de aprobados (notas >= 11) y cantidad de desaprobados (notas < 11). También muestra las notas originales ordenadas y resaltadas según si son aprobadas o desaprobadas. El código maneja la validación de entrada y muestra mensajes de error si se ingresan valores no numéricos o fuera del rango permitido (0-20).
 $notasRaw = '7.5, 8.0, 9.2, 6.8, 10.0, 5.5';
 $resultado = null;
 $error = null;
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+// Procesar el formulario al enviarlo
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {// Validar y procesar las notas ingresadas por el usuario
     $notasRaw = trim($_POST['notas'] ?? '');
     if ($notasRaw === '') {
         $error = 'Por favor ingresa al menos una nota.';
@@ -16,14 +16,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $partes = preg_split('/[\s,;]+/', $notasRaw, -1, PREG_SPLIT_NO_EMPTY);
         $notas = [];
         $invalidas = [];
-        foreach ($partes as $p) {
+        foreach ($partes as $p) {// Validamos que cada parte sea un número entre 0 y 20
             if (!is_numeric($p) || (float) $p < 0 || (float) $p > 20) {
                 $invalidas[] = $p;
             } else {
                 $notas[] = (float) $p;
             }
         }
-        if (!empty($invalidas)) {
+        if (!empty($invalidas)) {// Si hay valores inválidos, mostramos un mensaje de error con los valores problemáticos
             $error = 'Valores inválidos (deben ser números entre 0 y 20): ' . implode(', ', array_map('htmlspecialchars', $invalidas));
         } elseif (empty($notas)) {
             $error = 'No se encontraron notas válidas.';
@@ -85,6 +85,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
   </div>
   <?php endif; ?>
+
+  <?php include 'footer.php'; ?>
 </div>
 </div>
 </body>

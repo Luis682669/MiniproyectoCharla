@@ -6,6 +6,7 @@ namespace Luis\LaboratorioAutoload\Utilidades\Problemas;
 
 class Problema5
 {
+    // Esta función recibe un array de edades y devuelve un array con la cantidad de personas clasificadas como niño, adolescente, adulto y adulto mayor
     public static function ejecutar(array $edades): array
     {
         $clasificacion = [
