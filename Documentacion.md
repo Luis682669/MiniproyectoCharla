@@ -62,22 +62,30 @@ Para ejecutar este proyecto en un entorno local, asegúrate de contar con:
 **Capturas:**
 Problema #1
 <img width="1188" height="907" alt="Captura de pantalla 2026-06-08 083522" src="https://github.com/user-attachments/assets/4346e7ba-030a-4d49-afb5-e49388eccaa2" />
+
 Problema #2
 <img width="1223" height="831" alt="Captura de pantalla 2026-06-08 083615" src="https://github.com/user-attachments/assets/4a3d5e91-4b59-4493-b2a7-33459af354da" />
+
 Problema #3
 <img width="1185" height="900" alt="Captura de pantalla 2026-06-08 083628" src="https://github.com/user-attachments/assets/98abbc6e-33b9-4b28-bb70-de963694e248" />
+
 Problema #4
 <img width="1202" height="902" alt="Captura de pantalla 2026-06-08 083642" src="https://github.com/user-attachments/assets/f2382eb5-d9ab-4d12-ad8c-1f1843f965d2" />
+
 Problema#5
 <img width="1182" height="932" alt="Captura de pantalla 2026-06-08 083709" src="https://github.com/user-attachments/assets/b686f522-87f9-49a6-9b78-9c80a45b40a0" />
+
 Problema #6
 <img width="1177" height="966" alt="Captura de pantalla 2026-06-08 083742" src="https://github.com/user-attachments/assets/e6c4f223-535a-4023-b066-c588f5b9f5d4" />
+
 Problema #7
 <img width="1184" height="975" alt="Captura de pantalla 2026-06-08 083757" src="https://github.com/user-attachments/assets/90f132c1-5e12-4df1-adad-440a4a319472" />
-Problema #7
-<img width="1182" height="961" alt="Captura de pantalla 2026-06-08 083819" src="https://github.com/user-attachments/assets/2849cf9d-7a7d-4335-8c38-22d247e7f458" />
-Problema #8
 
+Problema #8
+<img width="1177" height="865" alt="Captura de pantalla 2026-06-08 083840" src="https://github.com/user-attachments/assets/68b71fc1-53af-4ac3-a261-96cb0cc46baa" />
+
+Problema #9
+<img width="1182" height="961" alt="Captura de pantalla 2026-06-08 083819" src="https://github.com/user-attachments/assets/2849cf9d-7a7d-4335-8c38-22d247e7f458" />
 
 
 
